@@ -1,17 +1,16 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main()
 {
-	int number;
-	cin >> number;
-	switch (number){
-		case 'A':
-			cout << 1;
-			break;
-		case 'B':
-			cout << 2;
-			break;
+	string str;
+	cin >> str;
 
+	for(int i=0;i<str.length();i++)
+	{
+		cout << str.at(i) - 64 << " ";
 	}
+
+
 }
