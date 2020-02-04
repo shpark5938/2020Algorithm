@@ -23,7 +23,7 @@ int main()
 	for (int i = 0; i < num; i++)
 	{
 		int count = Game(i);
-		if (count = 0)
+		if (count == 0)
 		{
 			cout << i << endl;
 			continue;
