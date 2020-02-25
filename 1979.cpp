@@ -18,30 +18,32 @@ int main(void) {
 
 		answer = 0;
 
-		// 가로 체크
-		for (int i = 0; i < N; i++) {
+		for (int i = 0; i < N; i++) 
+		{
 			int cnt = 0;
 			int j = 0;
-			while (true) {
-				if (!puzzle[i][j]) {
+			while (true) 
+			{
+				if (!puzzle[i][j]) 
+				{
 					if (cnt == K)
 						answer++;
 					cnt = 0;
 					j++;
 				}
-				else {
+				else 
+				{
 					cnt++;
 					j++;
 				}
-				if (j == N) {
+				if (j == N) 
+				{
 					if (cnt == K)
 						answer++;
 					break;
 				}
 			}
 		}
-
-		// 세로 체크
 		for (int i = 0; i < N; i++) {
 			int cnt = 0;
 			int j = 0;
