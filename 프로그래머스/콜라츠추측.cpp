@@ -27,5 +27,5 @@ int solution(int num) {
 }
 
 int main() {
-	cout << solution(626331);
+	cout << solution(6);
 }
